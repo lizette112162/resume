@@ -1,0 +1,15 @@
+html{
+  font-family: "Helvetica Neue", Helvetica,  Arial, sans-serif;
+}
+
+body {
+  display: block;
+  margin: 0 auto;
+}
+
+h2 {
+  background-color: white;
+  color: #036564 !important;
+  text-align: center;
+  font-size: 18px;
+}
