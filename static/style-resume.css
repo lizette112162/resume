@@ -32,7 +32,7 @@ body {
 }
 
 ol, ul {
-  /*list-style: none;*/
+  list-style: none;
 }
 blockquote, q {
   quotes: none;
@@ -68,12 +68,40 @@ table {
 }
 
 
-  h4 {
-  font-weight: bold;
+.resume-body h4 {
+  /*font-weight: bold;*/
   display:inline-block;
   color: #036564 !important;
+  border-bottom: 1px solid black;
+  width: 100%;
+  padding: 0 0 5px 0;
 }
 
+.resume-field ul {
+  list-style: circle;
+  padding-left: 14px;
+}
+.resume-field-subtitle {
+  margin:15px 0 10px 0;
+}
+
+/*.resume-field-coursework ul {*/
+  list-style: circle;
+  padding-left: 14px;
+}
+
+/*.resume-field-subtitle {*/
+  /*margin:15px 0 10px 0;*/
+}
+
+/*.resume-field-publications ul{*/
+  /*list-style: circle;*/
+  /*padding-left: 14px;*/
+}
+
+.resume-field-publications {
+  margin:15px 0 10px 0;
+}
 
 #footer {
   background-color: black;

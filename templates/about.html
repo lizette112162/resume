@@ -9,7 +9,7 @@
 
 
     <title>Elizabeth Rita Mutyaba | Resume</title>
-    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- Optional theme -->
@@ -20,9 +20,9 @@
     <header>
         <div class="navbar-header">
             <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('resume') }}">Resume</a></li>
+                <li><a href="{{ url_for('portfolio') }}">Portfolio</a></li>
             </ul>
         </div>
     </header>
@@ -30,7 +30,7 @@
 
     <div class="jumbotron center">
         <h1>Welcome to my Website</h1>
-        <p>Aspiring Software Engineer.</p>
+        <p>Aspiring Web Developer.</p>
         <p>Legal Researcher and Analyst.</p>
         <p>Formerly a Business Analyst and Researcher.</p>
         <p>Passionate about programming, human rights and using technology to make an impact on people's lives.</p>
