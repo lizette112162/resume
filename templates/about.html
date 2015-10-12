@@ -1,44 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+{%  extends 'base.html' %}
 
-<head>
+{% block title %}
+  <title>Elizabeth Rita Mutyaba | Resume</title>
+{% endblock %}
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+{% block styles %}
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+{% endblock %}
 
-
-    <title>Elizabeth Rita Mutyaba | Resume</title>
-    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-</head>
-
-<body>
-    <header>
-        <div class="navbar-header">
-            <ul>
-                <li><a href="{{ url_for('about') }}">About</a></li>
-                <li><a href="{{ url_for('resume') }}">Resume</a></li>
-                <li><a href="{{ url_for('portfolio') }}">Portfolio</a></li>
-            </ul>
-        </div>
-    </header>
+{% block body %}
+  <header>
+      <div class="navbar-header">
+          <ul>
+              <li><a href="{{ url_for('about') }}">About</a></li>
+              <li><a href="{{ url_for('resume') }}">Resume</a></li>
+              <li><a href="{{ url_for('portfolio') }}">Portfolio</a></li>
+          </ul>
+      </div>
+  </header>
 
 
-    <div class="jumbotron center">
-        <h1>Welcome to my Website</h1>
-        <p>Aspiring Web Developer.</p>
-        <p>Legal Researcher and Analyst.</p>
-        <p>Formerly a Business Analyst and Researcher.</p>
-        <p>Passionate about programming, human rights and using technology to make an impact on people's lives.</p>
-        <p>Love music, yoga, and hiking.</p>
-    </div>
-
-
-    <footer id="footer">Copyright 2015. Created by Elizabeth Rita Mutyaba</footer>
-</body>
-
-</html>
+  <div class="jumbotron center">
+      <h1>Welcome to my Website</h1>
+      <p>Aspiring Web Developer.</p>
+      <p>Legal Researcher and Analyst.</p>
+      <p>Formerly a Business Analyst and Researcher.</p>
+      <p>Passionate about programming, human rights and using technology to make an impact on people's lives.</p>
+      <p>Love music, yoga, and hiking.</p>
+  </div>
+{% endblock %}
