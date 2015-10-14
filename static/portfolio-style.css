@@ -12,3 +12,11 @@ h2 {
   color: #036564 !important;
   text-align: center;
 }
+
+#footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  clear: both;
+}
