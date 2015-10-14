@@ -1,20 +1,15 @@
-<!DOCTYPE html>
-<html>
+{%  extends 'base.html' %}
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
+{% block title %}
   <title>Resume</title>
-  <link type="text/css" rel="stylesheet" href="style-resume.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-</head>
+{% endblock %}
 
-<body>
-  <!-- <div id="container"> -->
+{% block styles %}
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style-resume.css') }}" />
+{% endblock %}
+
+
+  {% block body %}
   <div id="header">
     <h2>ELIZABETH RITA MUTYABA</h2>
     <p> <a href="mailto:ritamutyaba@gmail.com" target="_blank">ritamutyaba@gmail.com</a>
@@ -34,7 +29,7 @@
   <ul class="resume-body">
     <li>
       <h4>SUMMARY AND OBJECTIVE</h4>
-      <p>Aspiring Software Engineer with a background in Business Administration and Law.</p>
+      <p>Aspiring Web-Developer with a background in Business Administration and Law.</p>
       <p>Expertise in proposal writing, management of teams and report writing.</p>
       <p>Exceptional writing and communication skills with a demonstrated ability to take initiative and work both independently and collaboratively.</p>
     </li>
@@ -118,7 +113,5 @@
   </ul>
   </li>
 </ul>
-  <footer id="footer">Copyright 2015. Created by Elizabeth Rita Mutyaba</footer>
-</body>
-
-</html>
+<footer id="footer">Copyright 2015. Created by Elizabeth Rita Mutyaba</footer>
+{% endblock %}

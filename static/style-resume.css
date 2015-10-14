@@ -1,9 +1,9 @@
 html, body, div, span, applet, object, iframe,
-h1, h2, h4, h5, h6, p, blockquote, pre,
+h1, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+small, strike, sub, sup, tt, var,
+ u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -34,14 +34,17 @@ body {
 ol, ul {
   list-style: none;
 }
+
 blockquote, q {
   quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -81,23 +84,12 @@ table {
   list-style: circle;
   padding-left: 14px;
 }
+
 .resume-field-subtitle {
   margin:15px 0 10px 0;
 }
 
 /*.resume-field-coursework ul {*/
-  list-style: circle;
-  padding-left: 14px;
-}
-
-/*.resume-field-subtitle {*/
-  /*margin:15px 0 10px 0;*/
-}
-
-/*.resume-field-publications ul{*/
-  /*list-style: circle;*/
-  /*padding-left: 14px;*/
-}
 
 .resume-field-publications {
   margin:15px 0 10px 0;
