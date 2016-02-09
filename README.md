@@ -1,3 +1,3 @@
 # resume
 
-Created a personal website using HTML/CSS and Bootstrap Framework
+A personal website built with HTML/CSS and Bootstrap Framework
